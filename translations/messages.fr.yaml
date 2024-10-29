@@ -3,7 +3,21 @@ log_in: Se connecter
 add_vehicle: Ajouter un véhicule
 add_trip: Ajouter un trajet
 date: Date
-departure: Départ
 arrival: Arrivée
 distance: Distance
 submit: Enregistrer
+trip_date : Date du trajet
+origin: Départ
+destination: Arrivée
+mileage: Kilométrage
+unit: Unité
+vehicle: Véhicule
+category: Categorie
+vehicle_name: Nom du véhicule
+vehicle_type: Type de véhicule
+vehicle_category: Catégorie de véhicule
+Context: Contexte
+billable_client: Facturable au Client
+description: Description
+amount: Montant
+User: Utilisateur
