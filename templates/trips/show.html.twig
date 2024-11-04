@@ -12,7 +12,7 @@
             <td>{{ trip.id }}</td>
         </tr>
         <tr>
-            <th>DateDuTrajet</th>
+            <th>Date du Trajet</th>
             <td>{{ trip.tripDate ? trip.tripDate|date('Y-m-d') : '' }}</td>
         </tr>
         <tr>
@@ -44,7 +44,7 @@
             <td>{{ trip.description }}</td>
         </tr>
         <tr>
-            <th>FacturableAuClient</th>
+            <th>Facturable au Client</th>
             <td>{{ trip.billableClient ? 'Yes' : 'No' }}</td>
         </tr>
         </tbody>
@@ -71,7 +71,7 @@
             </tbody>
         </table>
     {% else %}
-        <p>Aucun frais associé à ce voyage.</p>
+        <p>Aucun frais associé à ce trajet.</p>
     {% endif %}
 
     <a href="{{ path('app_pdf_generator') }}" ><button class="btnAppPerso">Télécharger le PDF</button></a>

@@ -68,7 +68,7 @@ class TripsController extends AbstractController
     }
 
 
- /*   #[Route('/{id}', name: 'app_list_trips', methods: ['GET'])]
+ /*   #[Route('/{id}', name: 'app_list_trips', methods : ['GET'])]
     public function ListTrips (Trips $trip, EntityManagerInterface $entityManager, ExpensesRepository $expensesRepository, Security $security): Response
     {
         // Récupérer l'utilisateur connecté
