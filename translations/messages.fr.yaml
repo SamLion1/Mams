@@ -16,8 +16,16 @@ category: Categorie
 vehicle_name: Nom du véhicule
 vehicle_type: Type de véhicule
 vehicle_category: Catégorie de véhicule
-Context: Contexte
+context: Contexte
 billable_client: Facturable au Client
 description: Description
 amount: Montant
-User: Utilisateur
+user: Utilisateur
+expense_type: Type de depense
+total_amount: Montant total
+trips: Trajets
+email: Courriel
+password: Mot de passe
+lastname: nom
+firstname: prénom
+

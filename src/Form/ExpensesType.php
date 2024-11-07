@@ -14,9 +14,15 @@ class ExpensesType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('expenseType')
-            ->add('TotalAmount')
-            ->add('trips', EntityType::class, [
+            ->add('expenseType',    null, [
+                'label' => 'expense_type',
+            ])
+            ->add('TotalAmount', null, [
+                'label' => 'total_amount',
+            ])
+            ->add('trips', EntityType::class,
+                [
+                    'label' => 'trips',
                 'class' => Trips::class,
                 'choice_label' => 'id',
             ])
