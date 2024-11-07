@@ -150,7 +150,11 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 70px; /* Ajoutez une marge supérieure pour éviter le chevauchement avec la barre de navigation */
-
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 10px; /* Espace entre les éléments */
+    width: 80%; /* Largeur totale du formulaire */
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -208,8 +212,9 @@ form textarea {
     border-radius: 10px; /* Coins arrondis */
     border-width: 2px; /* Épaisseur de la bordure */
     padding: 8px; /* Remplissage */
-    width: 50%; /* Largeur */
+    width: 100%; /* Largeur */
     margin-bottom: 10px; /* Espacement en bas */
+    box-sizing: border-box;
 }
 
 /* Styles pour la bordure des champs lorsqu'ils sont en focus */
@@ -232,6 +237,7 @@ form textarea:active {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center; /* Ou utilisez 'space-between' pour les espacer */
 }
 
 

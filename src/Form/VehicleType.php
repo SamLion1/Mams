@@ -14,10 +14,18 @@ class VehicleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('Label')
-            ->add('model')
-            ->add('plate')
-            ->add('fiscal_power')
+            ->add('Label' , null, [
+                'label' => 'Marque'
+            ])
+            ->add('model' , null, [
+                'label' => 'Modèle'
+            ])
+            ->add('plate' , null,  [
+                'label' => 'Immatriculation'
+            ])
+            ->add('fiscal_power' , null, [
+                'label' => 'Puissance Fiscale'
+            ])
         ;
     }
 
