@@ -17,6 +17,7 @@ class UserType extends AbstractType
             //->add('roles')
             ->add('password', null, [
                 'label' => 'Mot de Passe'
+
             ] )
             ->add('lastname'    , null, [
                 'label' => 'Nom'
