@@ -18,27 +18,46 @@ class TripsType extends AbstractType
         $builder
             ->add('tripDate', null, [
                 'widget' => 'single_text',
+                'label'  => 'date'
             ])
-            ->add('origin')
-            ->add('destination')
-            ->add('mileage')
+            ->add('origin', null, [
+                'label' => 'origin'
+            ])
+            ->add('destination', null, [
+                'label' => 'destination'
+            ])
+            ->add('mileage' , null, [
+                'label' => 'mileage'
+            ])
             ->add('unit' , ChoiceType::class, [
                 'choices' => [
                     'miles' => 'miles',
                     'kilomètres' => 'kilomètres',
                 ],
+                'label' => 'unit'
             ])
-            ->add('context')
-            ->add('category')
-            ->add('description')
-            ->add('billableClient')
+            ->add('context',  null, [
+                'label' => 'context'
+            ])
+
+            ->add('category', null, [
+                'label' => 'category'
+            ])
+            ->add('description',    null, [
+                'label' => 'description'
+            ])
+            ->add('billableClient', null, [
+                'label' => 'billable_client'
+            ])
             ->add('User', EntityType::class, [
+                'label' => 'user',
                 'class' => User::class,
                 'choice_label' => function (User $user) {
                     return $user->getLastname() . ' ' . $user->getFirstname();
                 },
             ])
             ->add('Vehicle', EntityType::class, [
+                'label' => 'vehicle',
                 'class' => Vehicle::class,
                 'choice_label' => 'label',
                 'multiple' => true,

@@ -163,20 +163,16 @@ form {
     align-self: flex-start;
     display: inline-block; /* Afficher les boutons côte à côte */
 }
-h1{
+h1 {
     text-align: center;
-    text-shadow: 1px 1px #0a66c2;
     color: #01012f;
+    text-shadow: 1px 1px #0a66c2;
+    margin: 0 auto;
+    padding-top: 20px;
     position: relative;
-    right: 100px; /* Déplacer vers la gauche */
-    margin-top: 0; /* Déplace le h1 de 20 pixels vers le bas */
-    padding-top: 20px; /* Ajoute un remplissage de 20 pixels en haut du h1, ce qui le déplace vers le bas */
-
-    transform: translateY(20px); /* Déplace le h1 de 20 pixels vers le bas */
-
-
-
+    transform: translateX(0);
 }
+
 .card{
     margin: 50px auto auto;
     border-radius: 10px;
@@ -189,6 +185,8 @@ h1{
 .table{
     opacity: 80%;
     margin-top: 20px;
+    width: 100%; /* Ajustez la largeur si nécessaire */
+
 }
 .mams{
     color: #c0c07d;
@@ -231,11 +229,11 @@ form textarea:active {
 
 
 .button-container {
-    margin-top: 0;
-    display: inline-block; /* Afficher les boutons côte à côte */
-
-
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
+
 
 .btnAppPerso {
     display: inline-block; /* Afficher les boutons côte à côte */
@@ -370,6 +368,8 @@ body {
 .container {
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* Media query pour les tablettes (écrans entre 600px et 1200px) */
@@ -405,7 +405,7 @@ body {
     background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
